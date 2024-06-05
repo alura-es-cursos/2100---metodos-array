@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaveCast</title>
+    <link rel="shortcut icon" href="./src/imagenes/Logos/Favicon.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/grid-flex/index.css">
+    <link rel="stylesheet" href="./src/style/grid-flex/menu.css">
+    <link rel="stylesheet" href="./src/style/grid-flex/seccion.css">
+    <link rel="stylesheet" href="./src/style/grid-flex/tarjeta.css">
+    <link rel="stylesheet" href="./src/style/grid-flex/navbar.css">
+    <link rel="stylesheet" href="./src/style/base.css">
+    <link rel="stylesheet" href="./src/style/responsivo.css">
+</head>
+
+<body>
+    <header class="cabecera container">
+        <a href="#"><img class="cabecera__logo" src="./src/imagenes/Logos/CastWave_logo.svg" alt="Logo de WaveCast"></a>
+        <button class="cabecera__boton"><img src="./src/imagenes/Iconos/flecha-volver.svg" alt="Flecha volver"></button>
+        <button class="cabecera__boton cabecera__boton__avanzar"><img src="./src/imagenes/Iconos/flecha-avanzar.svg" alt="Flecha avanzar"></button>
+    </header>
+
+    <aside class="menu-lateral">
+        <a href="#" class="menu-lateral__logo"><img src="./src/imagenes/Logos/CastWave_logo.svg" alt="Logo de CastWave"></a>
+        <nav>
+            <ul>
+                <li class="menu-lateral__link activo"><button aria-label="Boton acceso home"><img src="./src/imagenes/Iconos/home_.svg" alt="Logo do Home">Home</button></li>
+                <li class="menu-lateral__link"><button aria-label="Boton acceso campo de busca"><img src="./src/imagenes/Iconos/search-blanco.svg" alt="Logo do Boton de busca">Busca</button></li>
+                <li class="menu-lateral__link"><button aria-label="Boton acceso su biblioteca"><img src="./src/imagenes/Iconos/bookmark-blanco.svg" alt="Logo do Boton su biblioteca">Su Biblioteca</button></li>
+            </ul>
+        </nav>
+        <h3 class="menu-lateral__playlist">PLAYLISTS</h3>
+        <ul>
+            <li class="menu-lateral__link"><button aria-label="Boton crear playlist"><img src="./src/imagenes/Iconos/add-box-blanco.svg" alt="Logo do Boton crear playlist">Crear Playlist</button></li>
+            <li class="menu-lateral__link"><button aria-label="Boton podcasts guardados" data-guardados><img src="./src/imagenes/Iconos/stars-blanco.svg" alt="Logo do Boton Podcasts guardados">Podcasts guardados</button></li>
+        </ul>
+    </aside>
+    <main class="principal container">
+        <section class="seccion seccion-horizontal">
+            <h2 class="seccion__titulo">Reproducidos recientemente</h2>
+            <ul class="seccion__tarjetas" data-tarjetas>
+                    <li>
+                         <a class="tarjeta" href="#">
+                            <img class="tarjeta__imagen" src="./src/imagenes/Imagens/reproducidos recientemente/hipter-fuera-de-control.png" alt="Hipsters Fuera de Control">
+                            <h3 class="tarjeta__titulo">Hipsters Punto Tech</h3>
+                            <div class="tarjeta__player"></div>
+                            <form class="tarjeta__boton" action=".">
+                                <button aria-label="Play Podcast">
+                                    <img src="./src/imagenes/Iconos/boton-play.svg" alt="Icono de Play">
+                                </button>
+                            </form>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tarjeta" href="#"><img class="tarjeta__imagen" src="./src/imagenes/Imagens/reproducidos recientemente/layers-punto tech.png" alt="Layers Punto Tech">
+                            <h3 class="tarjeta__titulo">Layers Punto Tech</h3>
+                            <div class="tarjeta__player"></div>
+                            <form class="tarjeta__boton" action="."><button aria-label="Play Podcast"><img src="./src/imagenes/Iconos/boton-play.svg" alt="Icono de Play"></button></form>
+                        </a>
+                    </li>
+    
+                 
+                
+                    <li>
+                        <a class="tarjeta" href="#">
+                            <img class="tarjeta__imagen" src="./src/imagenes/Imagens/reproducidos recientemente/dev-sin-fronteras.png" alt="Dev Sin Fronteras">
+                            <h3 class="tarjeta__titulo">Dev sin Fronteras</h3>
+                            <div class="tarjeta__player"></div>
+                            <form class="tarjeta__boton" action="."><button aria-label="Play Podcast"><img src="./src/imagenes/Iconos/boton-play.svg" alt="Icono de Play"></button></form>
+                        </a>
+                    </li>
+            </ul>
+        </section>
+        <section class="seccion seccion-vertical">
+            <h2 class="seccion__titulo">Indicados para ti</h2>
+            <a class="seccion__link" href="#" aria-label="Clique aqui para ver mas sobre Hipsters Punto Tech">Ver más</a>
+            <ul class="seccion__tarjetas" data-indicados>
+                  <li class="tarjeta">
+                    <a href="#">
+                        <img class="tarjeta__imagen" src="./src/imagenes/Imagens/hipsters-punto-tech/hipsters-punto-tech-techguide.png" alt="Hipsters Punto Tech - TechGuide: Storytelling con datos">
+                        <h3 class="tarjeta__titulo">TechGuide: Storytelling  con datos</h3>
+                        <h4 class="tarjeta__subtitulo">Hipsters Punto Tech</h4>
+                        <i class="fa-regular fa-star"></i>
+                    </a>
+                </li>
+                <li class="tarjeta">
+                    <a href="#">
+                        <img class="tarjeta__imagen" src="./src/imagenes/Imagens/hipsters-punto-tech/hipsters-punto-tech-estrategias.png" alt="Hipsters Punto Tech - Estrategias de Pruebas y Dev Leaders">
+                        <h3 class="tarjeta__titulo">Estrategias de Pruebas y Dev Leaders</h3>
+                        <h4 class="tarjeta__subtitulo">Hipsters Punto Tech</h4>
+                        <i class="fa-solid fa-star"></i>
+                    </a>
+                </li>
+                <li class="tarjeta">
+                    <a href="#">
+                        <img class="tarjeta__imagen" src="./src/imagenes/Imagens/hipsters-punto-tech/hipsters-punto-tech-nvidia.png" alt="Hipsters Punto Tech - NVIDIA, IA, comunidades y Dev Leaders">
+                        <h3 class="tarjeta__titulo">NVIDIA, IA, comunidades y Dev Leaders</h3>
+                        <h4 class="tarjeta__subtitulo">Hipsters Punto Tech</h4>
+                    </a>
+                </li>
+                <li class="tarjeta">
+                    <a href="#">
+                        <img class="tarjeta__imagen" src="./src/imagenes/Imagens/hipsters-punto-tech/hipsters-punto-tech-inovacion.png" alt="Hipsters Punto Tech - Innovación en la nube y Dev Leaders">
+                        <h3 class="tarjeta__titulo">Innovación en la nube y Dev Leaders</h3>
+                        <h4 class="tarjeta__subtitulo">Hipsters Punto Tech</h4>
+                    </a>
+                </li>
+                <li class="tarjeta">
+                    <a href="#">
+                        <img class="tarjeta__imagen" src="./src/imagenes/Imagens/hipsters-punto-tech/hipsters-punto-tech-ciberseguridad-1.png" alt="Hipsters Punto Tech - Fundamentos de Ciberseguridad">
+                        <h3 class="tarjeta__titulo">Fundamentos de Ciberseguridad</h3>
+                        <h4 class="tarjeta__subtitulo">Hipsters Punto Tech</h4>
+                    </a>
+                </li>
+                <li class="tarjeta">
+                    <a href="#">
+                        <img class="tarjeta__imagen" src="./src/imagenes/Imagens/hipsters-punto-tech/hipsters-punto-tech-chatgpt.png" alt="Hipsters Punto Tech - ChatGPT en todas las carreras">
+                        <h3 class="tarjeta__titulo">ChatGPT en todas las carreras</h3>
+                        <h4 class="tarjeta__subtitulo">Hipsters Punto Tech</h4>
+                    </a>
+                </li>
+                <li class="tarjeta">
+                    <a href="#">
+                        <img class="tarjeta__imagen" src="./src/imagenes/Imagens/indicados-para-ti/Caso-Farfetch-Front-End.png" alt="Hipsters Punto Tech - Caso Farfetch: Front-End">
+                        <h3 class="tarjeta__titulo">Caso Farfetch: Front-End</h3>
+                        <h4 class="tarjeta__subtitulo">Hipsters Punto Tech</h4>
+                    </a>
+                </li>
+                <li class="tarjeta">
+                    <a href="#">
+                        <img class="tarjeta__imagen" src="./src/imagenes/Imagens/indicados-para-ti/Inteligencia-Artificial-Aplicada.png" alt="Hipsters Punto Tech - Inteligencia Artificial Aplicada">
+                        <h3 class="tarjeta__titulo">Inteligencia Artificial Aplicada</h3>
+                        <h4 class="tarjeta__subtitulo">Hipsters Punto Tech</h4>
+                    </a>
+                </li>
+                <li class="tarjeta">
+                    <a href="#">
+                        <img class="tarjeta__imagen" src="./src/imagenes/Imagens/indicados-para-ti/De-secretaria-a-programadora-Leticia_Lima.png" alt="Scuba Punto Dev - De secretaria a programadora: Leticia Lima">
+                        <h3 class="tarjeta__titulo">De secretaria a programadora: Leticia Lima</h3>
+                        <h4 class="tarjeta__subtitulo">Scuba Punto Dev</h4>
+                    </a>
+                </li>
+                <li class="tarjeta">
+                    <a href="#">
+                        <img class="tarjeta__imagen" src="./src/imagenes/Imagens/indicados-para-ti/ux-vs-ui.png" alt="Layers Punto Tech - UX vs UI">
+                        <h3 class="tarjeta__titulo">UX vs UI</h3>
+                        <h4 class="tarjeta__subtitulo">Layers Punto Tech</h4>
+                    </a>
+                </li> 
+            </ul>
+        </section>
+       
+    </main>
+
+    <div class="navbar">
+        <ul class="navbar__items">
+            <li class="navbar__item navbar__item--home"><form action="."><button aria-label="Boton acceso Home"><img src="./src/imagenes/Iconos/home-blanco.svg" alt="Logo do Boton acceso Home">Home</button></form></li>
+            <li class="navbar__item navbar__item--busca"><form action="."><button aria-label="Boton acceso campo de busqueda"><img src="./src/imagenes/Iconos/search-blanco.svg" alt="Logo do Boton acceso campo de busqueda">Busca</button></form></li>
+            <li class="navbar__item navbar__item--biblioteca"><form action="."><button aria-label="Boton acceso su biblioteca"><img src="./src/imagenes/Iconos/bookmark-blanco.svg" alt="Logo do Boton acceso su biblioteca">Su Biblioteca</button></form></li>
+        </ul>
+    </div>
+</body>
+    <script src="https://kit.fontawesome.com/ef3eea8822.js" crossorigin="anonymous"></script>
+    <script src="./src/app/main.js" type="module"></script>
+
+</html>

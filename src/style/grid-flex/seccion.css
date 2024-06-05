@@ -1,0 +1,36 @@
+.seccion{
+    display: grid;
+    align-items: end;
+    row-gap: 2rem;
+}
+
+.seccion-horizontal .seccion-vertical{
+    grid-template-rows: 70px auto;
+}
+
+
+.seccion-horizontal .seccion__tarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(40%, 350px), 1fr ));
+    gap:1.25rem;
+}
+
+.seccion-vertical{
+    grid-template-columns: 1fr ;
+}
+
+.seccion-vertical .seccion__tarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(40%, 200px), 1fr ));
+    gap:1.25rem;
+}
+
+.seccion-vertical .seccion__tarjetas .tarjeta a{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.seccion-vertical .seccion__tarjetas .tarjeta__titulo{
+    flex-grow: 1;
+}
