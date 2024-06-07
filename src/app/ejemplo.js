@@ -3,7 +3,6 @@ const podBack = "PodBack"
 const podData = "PodData"
 
 //array o arreglos
-
 const podcast = ["PodFront", "PodBack", "PodData"]
 
 //los indexes
@@ -21,3 +20,6 @@ console.log(podcast.length)
 
 //para saber cuál es el último valor del arreglo
 console.log(podcast[podcast.length-1])
+
+//utilizando el método at
+console.log(podcast.at(-1))
