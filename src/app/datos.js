@@ -64,4 +64,3 @@
         image:'./src/imagenes/Imagens/dev-sin-fronteras/dev-sin-fronteras-94.png' },
 ]
 
-export default podcasts
