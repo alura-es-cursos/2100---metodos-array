@@ -39,3 +39,47 @@ const generateCard = (podcasts) => {
 
 
 
+const generatePlayer = (podcasts) => {
+
+
+    const cardElement = document.createElement('li');
+  
+    const anchorElement = document.createElement('a');
+    anchorElement.classList.add('tarjeta');
+    anchorElement.href = '#';
+  
+    const imgElement = document.createElement('img');
+    imgElement.classList.add('tarjeta__imagen');
+    imgElement.src = podcasts.image;
+    imgElement.alt = podcasts.subtitle;
+  
+    const subtitleElement = document.createElement('h3');
+    subtitleElement.classList.add('tarjeta__titulo');
+    subtitleElement.textContent = podcasts.subtitle;
+  
+    const playerElement = document.createElement('div');
+    playerElement.classList.add('tarjeta__player');
+  
+    const formElement = document.createElement('form');
+    formElement.classList.add('tarjeta__boton');
+    formElement.action = '.';
+  
+    const buttonElement = document.createElement('button');
+    buttonElement.ariaLabel = 'Play Podcast';
+  
+    const playIconElement = document.createElement('img');
+    playIconElement.src = './src/imagenes/Iconos/boton-play.svg';
+    playIconElement.alt = 'Icono de Play';
+  
+    buttonElement.appendChild(playIconElement);
+    formElement.appendChild(buttonElement);
+    anchorElement.appendChild(imgElement);
+    anchorElement.appendChild(subtitleElement);
+    anchorElement.appendChild(playerElement);
+    anchorElement.appendChild(formElement);
+    cardElement.appendChild(anchorElement);
+  
+    return cardElement;
+  };
+
+  export { generateCard, generatePlayer };

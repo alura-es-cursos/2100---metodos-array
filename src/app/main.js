@@ -1,4 +1,4 @@
-import { podcasts } from "./datos.js";
+import  podcasts from "./datos.js";
 import { generateCard, generatePlayer } from "./generator.js";
 
 const parentElement = document.querySelector('[data-indicados]');
