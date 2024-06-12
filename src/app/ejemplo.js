@@ -21,3 +21,5 @@ console.log(podcast.length)
 
 //para saber cuál es el último valor del arreglo
 console.log(podcast[podcast.length-1])
+
+console.log(podcast.at(-1))
