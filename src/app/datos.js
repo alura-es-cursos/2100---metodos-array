@@ -64,4 +64,18 @@
         image:'./src/imagenes/Imagens/dev-sin-fronteras/dev-sin-fronteras-94.png' },
 ]
 
-export default podcasts;
+const newPodcast = {
+  title: "Nuevo Podcast",
+  subtitle: "Descripción del nuevo podcast",
+  image: "https://example.com/new-podcast.jpg",
+  saved: "false"
+};
+
+const newPodcast2 = {
+  title: "Nuevo Podcast 2",
+  subtitle: "Descripción del nuevo podcast",
+  image: "https://example.com/new-podcast.jpg",
+  saved: "false"
+};
+
+export {podcasts, newPodcast,newPodcast2 }
