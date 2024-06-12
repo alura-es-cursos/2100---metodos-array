@@ -23,3 +23,22 @@ console.log(podcast.length)
 console.log(podcast[podcast.length-1])
 
 console.log(podcast.at(-1))
+
+
+//Desestructuración
+
+//const podcast = ["PodFront", "PodBack", "PodData"]
+
+const [pod0, pod1, pod2] = podcast;
+
+console.log(pod0)
+
+
+const podcast2 = {
+    nombre: "Podcast Prueba",
+    titulo: "Podcast"
+}
+
+const {nombre, titulo} = podcast2
+
+console.log(nombre)
