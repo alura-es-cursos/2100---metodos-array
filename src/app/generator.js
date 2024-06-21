@@ -26,7 +26,8 @@ const generateCard = (podcasts) => {
 
 
     const starElement = document.createElement('i');
-    starElement.classList.add('fa-regular', 'fa-star')
+    podcasts.saved === 'true' ? starElement.classList.add('fa-solid', 'fa-star') : starElement.classList.add('fa-regular', 'fa-star');
+
 
     cardElement.appendChild(imgElement);
     cardElement.appendChild(titleElement);
